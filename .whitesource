@@ -25,6 +25,5 @@
   },
   "leastVulnerablePackageSettings": {
     "enabled": true
-  },
-  "//_comment": "Making some changes to test LVP."
+  }
 }
