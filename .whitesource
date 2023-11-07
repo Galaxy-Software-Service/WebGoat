@@ -25,5 +25,15 @@
   },
   "leastVulnerablePackageSettings": {
     "enabled": true
+  },
+ "scanSettingsSAST": {
+    "enableScan": true,
+    "scanPullRequests": true,
+    "incrementalScan": false,
+    "baseBranches": ["master"]
+  },
+  "checkRunSettingsSAST": {
+    "checkRunConclusionLevel": "failure",
+    "severityThreshold": "high"
   }
 }
