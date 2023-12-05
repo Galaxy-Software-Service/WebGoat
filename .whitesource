@@ -35,5 +35,22 @@
   "checkRunSettingsSAST": {
     "checkRunConclusionLevel": "failure",
     "severityThreshold": "high"
+  },
+  "remediateSettings": {
+    "workflowRules": {
+      "enabled": false
+    },
+    "enableRenovate": true,
+    "extends": [
+      "config:base",
+      "github>whitesource/merge-confidence:beta"
+      ],
+      "packageRules": [
+      {
+        "matchConfidence": ["very high"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      }
+    ]
   }
 }
